@@ -1,0 +1,111 @@
+{
+  "configVersion": 1,
+  "timestamp": 1685336247044,
+  "index": "/f1-circuits/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/f1-circuits/favicon.ico",
+        "/f1-circuits/index.html",
+        "/f1-circuits/main.ab6b23114f17575d.js",
+        "/f1-circuits/manifest.webmanifest",
+        "/f1-circuits/polyfills.43c1ff8582cc2ed1.js",
+        "/f1-circuits/runtime.26b4c14ab2ce986f.js",
+        "/f1-circuits/styles.ef46db3751d8e999.css"
+      ],
+      "patterns": [
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.2\\/dist\\/css\\/bootstrap\\.min\\.css"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/f1-circuits/assets/icons/icon-128x128.png",
+        "/f1-circuits/assets/icons/icon-144x144.png",
+        "/f1-circuits/assets/icons/icon-152x152.png",
+        "/f1-circuits/assets/icons/icon-192x192.png",
+        "/f1-circuits/assets/icons/icon-384x384.png",
+        "/f1-circuits/assets/icons/icon-512x512.png",
+        "/f1-circuits/assets/icons/icon-72x72.png",
+        "/f1-circuits/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "circuits-api",
+      "patterns": [
+        "https:\\/\\/v1\\.formula-1\\.api-sports\\.io\\/circuits[^/]*[^/]*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 35,
+      "maxAge": 3600000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    },
+    {
+      "name": "images",
+      "patterns": [
+        "https:\\/\\/media-1\\.api-sports\\.io\\/formula-1\\/circuits\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 35,
+      "maxAge": 86400000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/f1-circuits/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/f1-circuits/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/f1-circuits/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/f1-circuits/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/f1-circuits/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/f1-circuits/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/f1-circuits/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/f1-circuits/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/f1-circuits/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/f1-circuits/index.html": "6e91a593ec738ff704bb289ff492ac3643ef18ec",
+    "/f1-circuits/main.ab6b23114f17575d.js": "0d23c02ec5278073b34bc57f018e64254fcaccbc",
+    "/f1-circuits/manifest.webmanifest": "afd3914c87c084bdb96c8a90ad291c01c26eeba7",
+    "/f1-circuits/polyfills.43c1ff8582cc2ed1.js": "d40581b933b13e2a2fa6466ae0cffb61fb3b1c17",
+    "/f1-circuits/runtime.26b4c14ab2ce986f.js": "d3dc08ea34b98e1c30fd1bc130a5df9681919fe5",
+    "/f1-circuits/styles.ef46db3751d8e999.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
