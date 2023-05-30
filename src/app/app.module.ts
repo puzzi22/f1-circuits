@@ -3,8 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CardComponent } from './components/card/card.component';
 import { CircuitComponent } from './components/circuit/circuit.component';
 import { CircuitsComponent } from './components/circuits/circuits.component';
+import { GridComponent } from './components/grid/grid.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -18,7 +20,15 @@ import { MatTableModule } from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [AppComponent, CircuitsComponent, CircuitComponent],
+  declarations: [
+    AppComponent,
+    CircuitsComponent,
+    CircuitComponent,
+    CardComponent,
+    GridComponent,
+    CardComponent,
+    GridComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

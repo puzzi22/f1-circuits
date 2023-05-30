@@ -8,7 +8,6 @@ import {
 } from '@angular/animations';
 
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { Circuit } from 'src/app/models/circuit.interface';
 import { CircuitsService } from 'src/app/services/circuits.service';
 import { LoadingService } from 'src/app/services/loading.service';
@@ -34,13 +33,11 @@ import { LoadingService } from 'src/app/services/loading.service';
 })
 export class CircuitsComponent implements OnInit {
   circuits: Circuit[] = [];
-  displayedColumns: string[] = ['id', 'name', 'length'];
   viewMode: 'table' | 'card' = 'table';
 
   constructor(
     private circuitsService: CircuitsService,
-    private loadingService: LoadingService,
-    private router: Router
+    private loadingService: LoadingService
   ) {}
 
   ngOnInit(): void {
@@ -49,9 +46,5 @@ export class CircuitsComponent implements OnInit {
       this.circuits = circuits;
       this.loadingService.setLoading(false);
     });
-  }
-
-  navigateToDetails(circuit: Circuit) {
-    this.router.navigate(['/circuit', circuit.id]);
   }
 }
