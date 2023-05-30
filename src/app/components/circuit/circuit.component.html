@@ -1,0 +1,66 @@
+<div class="container mt-5">
+  <div
+    *ngIf="circuit"
+    class="row animate__animated animate__bounce animate__fadeIn"
+  >
+    <div class="col-md-9">
+      <h1>{{ circuit.name }}</h1>
+      <img style="width: 400px" src="{{ circuit.image }}" alt="" />
+
+      <!-- Show details button -->
+      <button
+        id="show-details"
+        mat-raised-button
+        color="primary"
+        (click)="toggleDetails()"
+      >
+        {{ showDetails ? "Hide Details" : "Show All Details" }}
+      </button>
+
+      <div *ngIf="showDetails">
+        <!-- General Details -->
+        <mat-expansion-panel [expanded]="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>General Details</mat-panel-title>
+          </mat-expansion-panel-header>
+          <p><strong>Identifier: </strong>{{ circuit.id }}</p>
+          <p>
+            <strong>First Grand Prix: </strong>{{ circuit.first_grand_prix }}
+          </p>
+          <p><strong>Laps: </strong>{{ circuit.laps }}</p>
+          <p><strong>Length: </strong>{{ circuit.length }}</p>
+          <p><strong>Race Distance: </strong>{{ circuit.race_distance }}</p>
+          <p><strong>Capacity: </strong>{{ circuit.capacity }}</p>
+          <p><strong>Opened: </strong>{{ circuit.opened }}</p>
+          <p><strong>Owner: </strong>{{ circuit.owner }}</p>
+        </mat-expansion-panel>
+
+        <!-- Competition Details -->
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Competition </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p><strong>ID: </strong>{{ circuit.competition.id }}</p>
+          <p><strong>Name: </strong>{{ circuit.competition.name }}</p>
+          <p>
+            <strong>Location: </strong>{{ circuit.competition.location.city }},
+            {{ circuit.competition.location.country }}
+          </p>
+        </mat-expansion-panel>
+
+        <!-- Lap Record Details -->
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Lap Record</mat-panel-title>
+          </mat-expansion-panel-header>
+          <p><strong>Time: </strong>{{ circuit.lap_record.time }}</p>
+          <p><strong>Driver: </strong>{{ circuit.lap_record.driver }}</p>
+          <p><strong>Year: </strong>{{ circuit.lap_record.year }}</p>
+        </mat-expansion-panel>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <a routerLink="/" class="btn btn-danger">Back</a>
+    </div>
+  </div>
+</div>

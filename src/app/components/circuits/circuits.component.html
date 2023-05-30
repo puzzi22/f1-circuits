@@ -1,0 +1,70 @@
+<div class="container">
+  <h1>All 2023 Circuits</h1>
+
+  <div class="view-switch">
+    <button
+      mat-icon-button
+      (click)="viewMode = 'table'"
+      [class.active]="viewMode === 'table'"
+    >
+      <mat-icon>view_headline</mat-icon>
+    </button>
+    <button
+      mat-icon-button
+      (click)="viewMode = 'card'"
+      [class.active]="viewMode === 'card'"
+    >
+      <mat-icon>view_module</mat-icon>
+    </button>
+  </div>
+
+  <div *ngIf="viewMode === 'table'">
+    <table
+      mat-table
+      [dataSource]="circuits"
+      class="mat-elevation-z8"
+      [@listAnimation]="circuits.length"
+    >
+      <!-- ID Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let circuit">{{ circuit.id }}</td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let circuit">{{ circuit.name }}</td>
+      </ng-container>
+
+      <!-- Length Column -->
+      <ng-container matColumnDef="length">
+        <th mat-header-cell *matHeaderCellDef>Length</th>
+        <td mat-cell *matCellDef="let circuit">{{ circuit.length }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr
+        id="table-row"
+        mat-row
+        *matRowDef="let row; columns: displayedColumns"
+        (click)="navigateToDetails(row)"
+      ></tr>
+    </table>
+  </div>
+
+  <div *ngIf="viewMode === 'card'" class="card-container">
+    <mat-card
+      *ngFor="let circuit of circuits"
+      [routerLink]="['/circuit', circuit.id]"
+      class="animate__animated animate__bounce animate__fadeIn"
+    >
+      <img mat-card-image [src]="circuit.image" alt="{{ circuit.name }}" />
+      <mat-card-title>{{ circuit.name }}</mat-card-title>
+      <mat-card-content>
+        <p><strong>ID:</strong> {{ circuit.id }}</p>
+        <p><strong>Length:</strong> {{ circuit.length }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

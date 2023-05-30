@@ -1,0 +1,54 @@
+{
+  "$schema": "./node_modules/@angular/service-worker/config/schema.json",
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/manifest.webmanifest",
+          "/*.css",
+          "/*.js"
+        ],
+        "urls": [
+          "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        ]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**",
+          "/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"
+        ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "circuits-api",
+      "urls": ["https://v1.formula-1.api-sports.io/circuits**"],
+      "cacheConfig": {
+        "maxSize": 35,
+        "maxAge": "1h",
+        "timeout": "1s",
+        "strategy": "freshness"
+      }
+    },
+    {
+      "name": "images",
+      "urls": ["https://media-1.api-sports.io/formula-1/circuits/**"],
+      "cacheConfig": {
+        "maxSize": 35,
+        "maxAge": "1d",
+        "strategy": "freshness"
+      }
+    }
+  ]
+}

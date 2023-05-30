@@ -1,0 +1,48 @@
+.container {
+  margin-top: 30px;
+}
+
+.view-switch {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+mat-card {
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-container mat-card {
+  flex: 1 1 auto;
+  margin: 1em;
+  width: 300px;
+  padding: 20px;
+  max-height: 300px;
+}
+
+button.active mat-icon {
+  color: rgb(56, 56, 56);
+}
+
+button mat-icon {
+  color: darkgrey;
+}
+
+#table-row {
+  cursor: pointer;
+}
+
+#table-row:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+#table-row:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
