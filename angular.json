@@ -94,7 +94,11 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/f1-circuits/",
+            "dir": "dist/f1-circuits"
+          }
         }
       }
     }

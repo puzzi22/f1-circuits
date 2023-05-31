@@ -1,8 +1,5 @@
 <div class="container mt-5">
-  <div
-    *ngIf="circuit"
-    class="row animate__animated animate__bounce animate__fadeIn"
-  >
+  <div *ngIf="circuit">
     <div class="col-md-9">
       <h1>{{ circuit.name }}</h1>
       <img style="width: 400px" src="{{ circuit.image }}" alt="" />
