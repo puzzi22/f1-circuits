@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1685678302194,
+  "timestamp": 1685741679911,
   "index": "/f1-circuits/index.html",
   "assetGroups": [
     {
@@ -61,9 +61,9 @@
     {
       "name": "images",
       "patterns": [
-        "https:\\/\\/media-1\\.api-sports\\.io\\/formula-1\\/circuits\\/.*"
+        "https:\\/\\/media-1\\.api-sports\\.io\\/formula-1\\/circuits[^/]*[^/]*"
       ],
-      "strategy": "performance",
+      "strategy": "freshness",
       "maxSize": 35,
       "maxAge": 86400000,
       "cacheQueryOptions": {
