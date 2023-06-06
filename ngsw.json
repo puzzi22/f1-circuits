@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1686035752297,
+  "timestamp": 1686035988729,
   "index": "/f1-circuits/index.html",
   "assetGroups": [
     {
@@ -79,7 +79,7 @@
     "/f1-circuits/assets/icons/icons8-f1-car-72.png": "1dbb04822e5f711653bfbed5e003a6de31967136",
     "/f1-circuits/assets/icons/icons8-f1-car-96.png": "c806cebbe97b143f99830def885cd64d167ff48d",
     "/f1-circuits/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/f1-circuits/index.html": "eca8c202ab403ac73390599682967df71d08d6c3",
+    "/f1-circuits/index.html": "48cf5cff8879d67a149349c7a5e80726f12c9559",
     "/f1-circuits/main.a06139e5c0c26700.js": "807f56f1d7dcb150896edbc78034c13c8f99d62a",
     "/f1-circuits/manifest.webmanifest": "274d00f29662d2c7f360b01ad0b57dd8b7e8f329",
     "/f1-circuits/polyfills.43c1ff8582cc2ed1.js": "d40581b933b13e2a2fa6466ae0cffb61fb3b1c17",
