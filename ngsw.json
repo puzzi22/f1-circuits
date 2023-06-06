@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1685742779351,
+  "timestamp": 1686033137511,
   "index": "/f1-circuits/index.html",
   "assetGroups": [
     {
@@ -31,14 +31,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "/f1-circuits/assets/icons/icon-128x128.png",
-        "/f1-circuits/assets/icons/icon-144x144.png",
-        "/f1-circuits/assets/icons/icon-152x152.png",
-        "/f1-circuits/assets/icons/icon-192x192.png",
-        "/f1-circuits/assets/icons/icon-384x384.png",
-        "/f1-circuits/assets/icons/icon-512x512.png",
-        "/f1-circuits/assets/icons/icon-72x72.png",
-        "/f1-circuits/assets/icons/icon-96x96.png"
+        "/f1-circuits/assets/icons/icons8-f1-car-128.png",
+        "/f1-circuits/assets/icons/icons8-f1-car-144.png",
+        "/f1-circuits/assets/icons/icons8-f1-car-152.png",
+        "/f1-circuits/assets/icons/icons8-f1-car-192.png",
+        "/f1-circuits/assets/icons/icons8-f1-car-72.png",
+        "/f1-circuits/assets/icons/icons8-f1-car-96.png"
       ],
       "patterns": []
     }
@@ -59,7 +57,7 @@
       "version": 1
     },
     {
-      "name": "images",
+      "name": "images-api",
       "patterns": [
         "https:\\/\\/media-1\\.api-sports\\.io\\/formula-1\\/circuits[^/]*[^/]*"
       ],
@@ -74,18 +72,16 @@
     }
   ],
   "hashTable": {
-    "/f1-circuits/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
-    "/f1-circuits/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
-    "/f1-circuits/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
-    "/f1-circuits/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
-    "/f1-circuits/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/f1-circuits/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/f1-circuits/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
-    "/f1-circuits/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/f1-circuits/assets/icons/icons8-f1-car-128.png": "65969a359dc1b8fc0c17b00d6954754ee3a6b1a0",
+    "/f1-circuits/assets/icons/icons8-f1-car-144.png": "eead4248ca2b6e3298fc2393cec3b1b19edc42dd",
+    "/f1-circuits/assets/icons/icons8-f1-car-152.png": "9e008349e9801ea6c780da63f436ce692b8fad93",
+    "/f1-circuits/assets/icons/icons8-f1-car-192.png": "d59ab2e6d709d954a0018851dacb3f3a53c9c206",
+    "/f1-circuits/assets/icons/icons8-f1-car-72.png": "1dbb04822e5f711653bfbed5e003a6de31967136",
+    "/f1-circuits/assets/icons/icons8-f1-car-96.png": "c806cebbe97b143f99830def885cd64d167ff48d",
     "/f1-circuits/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "/f1-circuits/index.html": "c9f3ed7f7d2a20a8241b32fec01ffe2e2f97790e",
     "/f1-circuits/main.625ab1c29a6725c6.js": "d1e496906bc2086450acb23451d4889a599b3fa6",
-    "/f1-circuits/manifest.webmanifest": "afd3914c87c084bdb96c8a90ad291c01c26eeba7",
+    "/f1-circuits/manifest.webmanifest": "ff44dfd59e5b0d7131f2f221f6c5a5f911ef5e2e",
     "/f1-circuits/polyfills.43c1ff8582cc2ed1.js": "d40581b933b13e2a2fa6466ae0cffb61fb3b1c17",
     "/f1-circuits/runtime.26b4c14ab2ce986f.js": "d3dc08ea34b98e1c30fd1bc130a5df9681919fe5",
     "/f1-circuits/styles.abc6d54c123c2e41.css": "b15d754c0124297ba10a576726135ecdc49a8ecd"
